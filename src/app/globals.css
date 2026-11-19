@@ -1,0 +1,350 @@
+@import 'tailwindcss';
+
+/* Палитра «глубины воды»: чем больше объём, тем глубже оттенок.
+   Тёмный «чернильный» цвет — для текста и контраста. */
+
+@theme {
+  --color-ink-950: #050f1c;
+  --color-ink-900: #0a1a2c;
+  --color-ink-800: #13263b;
+  --color-ink-700: #23374e;
+  --color-ink-600: #3a4d63;
+  --color-ink-500: #55677c;
+  --color-ink-400: #617286;
+  --color-ink-300: #a9b6c4;
+  --color-ink-200: #d2dbe4;
+  --color-ink-100: #e6ecf2;
+  --color-ink-50: #f3f6f9;
+
+  --color-sea-50: #eef8fd;
+  --color-sea-100: #d9f0fb;
+  --color-sea-200: #b2e0f6;
+  --color-sea-300: #7ccaf0;
+  --color-sea-400: #3fafe5;
+  --color-sea-500: #1a92d4;
+  --color-sea-600: #0e75b6;
+  --color-sea-700: #0d5e93;
+  --color-sea-800: #0f4c75;
+  --color-sea-900: #103e5f;
+  --color-sea-950: #0a2740;
+
+  --color-foam: #f5f9fc;
+  --color-sun-300: #ffd28f;
+  --color-sun-50: #fff7ea;
+  --color-mint-500: #12b386;
+  --color-mint-50: #e8f8f2;
+  --color-coral-500: #e5484d;
+  --color-coral-50: #fdeeee;
+
+  --radius-card: 1.75rem;
+  --radius-panel: 2.25rem;
+
+  --shadow-soft: 0 1px 2px rgb(10 26 44 / 0.04), 0 10px 30px -14px rgb(13 94 147 / 0.22);
+  --shadow-lift: 0 2px 6px rgb(10 26 44 / 0.05), 0 28px 60px -24px rgb(13 94 147 / 0.38);
+  --shadow-glow: 0 10px 30px -10px rgb(26 146 212 / 0.55);
+
+  --ease-fluid: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-ripple: ripple 3.6s ease-out infinite;
+  --animate-fade-in: fade-in 0.5s var(--ease-fluid) both;
+  --animate-rise-in: rise-in 0.8s var(--ease-fluid) both;
+  --animate-shimmer: shimmer 2.2s linear infinite;
+}
+
+@theme inline {
+  --font-sans: var(--font-onest), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-unbounded), var(--font-onest), ui-sans-serif, sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply bg-foam font-sans text-ink-900 antialiased;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  ::selection {
+    background: var(--color-sea-200);
+    color: var(--color-ink-950);
+  }
+
+  :focus-visible {
+    outline: 2.5px solid var(--color-sea-500);
+    outline-offset: 3px;
+    border-radius: 0.5rem;
+  }
+
+  button,
+  [role='button'] {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  /* Поля ввода на iOS не должны увеличивать страницу при фокусе. */
+  @media (max-width: 640px) {
+    input,
+    textarea,
+    select {
+      font-size: max(16px, 1em);
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[84rem] px-5 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[0.8rem] font-semibold tracking-[0.14em] text-sea-700 uppercase;
+  }
+
+  .display-xl {
+    @apply font-display font-semibold tracking-[-0.035em] text-balance;
+    font-size: clamp(2.2rem, 1rem + 4.4vw, 4.6rem);
+    line-height: 1.04;
+  }
+
+  .display-lg {
+    @apply font-display font-semibold tracking-[-0.03em] text-balance;
+    font-size: clamp(2rem, 1.2rem + 3.2vw, 3.9rem);
+    line-height: 1.05;
+  }
+
+  .display-md {
+    @apply font-display font-semibold tracking-[-0.025em] text-balance;
+    font-size: clamp(1.65rem, 1.15rem + 1.9vw, 2.75rem);
+    line-height: 1.1;
+  }
+
+  .lead {
+    @apply text-pretty text-ink-600;
+    font-size: clamp(1.02rem, 0.95rem + 0.35vw, 1.22rem);
+    line-height: 1.6;
+  }
+
+  .link-underline {
+    @apply underline decoration-sea-300 decoration-2 underline-offset-4 transition-colors hover:decoration-sea-600;
+  }
+
+  .skeleton-line {
+    @apply relative h-3 overflow-hidden rounded-full bg-ink-100;
+  }
+
+  .skeleton-line::after {
+    content: '';
+    @apply animate-shimmer absolute inset-0;
+    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.75), transparent);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.55);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Вода внутри иллюстраций: бесконечно бегущая волна и пузырьки. */
+@keyframes wave-x {
+  to {
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes wave-x-rev {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(0.6);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(var(--rise, -260px)) scale(1);
+    opacity: 0;
+  }
+}
+
+.water-wave {
+  animation: wave-x 3.2s linear infinite;
+}
+
+.water-wave-back {
+  animation: wave-x-rev 5.2s linear infinite;
+}
+
+.water-bubble {
+  transform-box: fill-box;
+  animation: bubble var(--dur, 6s) ease-in infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+.water-level {
+  transition: transform 0.9s var(--ease-fluid);
+}
+
+/* Плавное появление секций при прокрутке — только CSS, контент виден и без поддержки. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: rise-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 55%;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Аккордеон на <details> с плавным раскрытием там, где браузер это умеет. */
+details.faq-item::details-content {
+  block-size: 0;
+  overflow: clip;
+  transition:
+    block-size 0.35s var(--ease-fluid),
+    content-visibility 0.35s allow-discrete;
+}
+
+details.faq-item[open]::details-content {
+  block-size: auto;
+}
+
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+}
+
+details.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Мобильное меню и оверлей (Radix Dialog). */
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes overlay-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-14px) scale(0.98);
+  }
+}
+
+@keyframes menu-out {
+  to {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+}
+
+@keyframes bar-in {
+  from {
+    opacity: 0;
+    transform: translateY(120%);
+  }
+}
+
+@keyframes wave-drift {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Прорисовка волнистого подчёркивания в заголовке. */
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

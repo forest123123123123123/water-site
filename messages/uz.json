@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "homeTitle": "Toshkent boʻylab ichimlik suvi yetkazib berish ({volumes})",
+    "homeDescription": "{volumes} hajmli idishlarda ichimlik suvi. Toshkent boʻylab yetkazib beramiz.",
+    "catalogTitle": "Ichimlik suvi katalogi",
+    "catalogDescription": "Ichimlik suvining barcha hajmlari: {volumes}. Solishtiring va mosini tanlang. Toshkent boʻylab yetkazib berish.",
+    "productTitle": "{title}: Toshkent boʻylab yetkazib berish",
+    "productDescription": "{title}. {description} Toshkent boʻylab yetkazib berish.",
+    "cartTitle": "Savat",
+    "checkoutTitle": "Buyurtmani rasmiylashtirish",
+    "deliveryTitle": "Yetkazib berish va toʻlov",
+    "deliveryDescription": "Toshkent boʻylab ichimlik suvini yetkazib berish shartlari, toʻlov usullari va koʻp beriladigan savollarga javoblar.",
+    "aboutTitle": "Kompaniya haqida",
+    "aboutDescription": "{brand} Toshkent boʻylab ichimlik suvi yetkazib beradi.",
+    "contactsTitle": "Aloqa",
+    "contactsDescription": "{brand} bilan bogʻlanish: telefon, messenjerlar va ijtimoiy tarmoqlar.",
+    "privacyTitle": "Maxfiylik siyosati",
+    "ogTitle": "Ichimlik suvi",
+    "ogAccent": "Toshkent boʻylab yetkazib berish",
+    "ogSubtitle": "Tanlash uchun hajmlar",
+    "ogProductSubtitle": "Toshkent boʻylab yetkazib berish"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "catalog": "Katalog",
+    "delivery": "Yetkazib berish va toʻlov",
+    "deliveryShort": "Yetkazib berish",
+    "about": "Kompaniya haqida",
+    "contacts": "Aloqa",
+    "cart": "Savat",
+    "checkout": "Buyurtmani rasmiylashtirish",
+    "privacy": "Maxfiylik siyosati",
+    "menu": "Menyu",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish",
+    "mainNav": "Asosiy navigatsiya",
+    "breadcrumbs": "Navigatsiya zanjiri",
+    "skipToContent": "Asosiy qismga oʻtish"
+  },
+  "common": {
+    "pieces": "{count} dona",
+    "priceOnRequest": "Narxi aniqlanmoqda",
+    "perLiter": "litri ≈ {price}",
+    "inStock": "Mavjud",
+    "outOfStock": "Mavjud emas",
+    "copy": "Matndan nusxa olish",
+    "copied": "Nusxa olindi",
+    "language": "Til",
+    "toCatalog": "Katalogga oʻtish",
+    "optional": "ixtiyoriy"
+  },
+  "cart": {
+    "title": "Savat",
+    "buttonLabel": "Savat, mahsulotlar: {count}",
+    "add": "Savatga",
+    "addLong": "Savatga qoʻshish",
+    "added": "Savatga qoʻshildi: {title}",
+    "increase": "Yana bitta qoʻshish",
+    "decrease": "Bittaga kamaytirish",
+    "quantity": "Soni",
+    "remove": "Savatdan olib tashlash",
+    "removed": "Savatdan olib tashlandi: {title}",
+    "undo": "Qaytarish",
+    "clear": "Savatni tozalash",
+    "cleared": "Savat tozalandi",
+    "empty": "Savat hozircha boʻsh",
+    "emptyText": "Katalogdan suv qoʻshing, u shu yerda koʻrinadi.",
+    "quickAdd": "Tez qoʻshish",
+    "summary": "Buyurtmangiz",
+    "units": "Soni",
+    "liters": "Suv hajmi",
+    "total": "Jami",
+    "totalUnknown": "Summa narxlar aniqlangandan keyin maʼlum boʻladi",
+    "delivery": "Yetkazib berish",
+    "deliveryTerms": "shartlarni koʻring",
+    "checkout": "Buyurtma berish",
+    "continue": "Xaridni davom ettirish",
+    "unavailableItem": "Hozir mavjud emas",
+    "hasUnavailable": "Baʼzi mahsulotlar hozir mavjud emas. Buyurtma berish uchun ularni savatdan olib tashlang.",
+    "unitPrice": "donasi {price}",
+    "barLabel": "Savatda",
+    "barSummary": "{units} dona · {liters}",
+    "open": "Savatni ochish",
+    "storedHint": "Savat shu brauzerda saqlanadi, buyurtmaga keyinroq qaytishingiz mumkin."
+  },
+  "product": {
+    "description": "Tavsif",
+    "specs": "Xususiyatlar",
+    "otherVolumes": "Boshqa hajmlar",
+    "chooseVolume": "Hajm",
+    "compareTitle": "Boshqa hajmlar bilan solishtirish",
+    "compareHint": "Idishlarning nisbatlari shartli koʻrsatilgan.",
+    "deliveryTitle": "Toshkent boʻylab yetkazib berish",
+    "deliveryText": "Muddat, narx va toʻlov usullari «Yetkazib berish va toʻlov» sahifasida.",
+    "note": "Eʼtibor bering",
+    "unavailableText": "Bu mahsulot hozir mavjud emas. Boshqa hajmlarni koʻring.",
+    "toCart": "Savatga oʻtish"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Suv yetkazib berish · Toshkent",
+      "title": "Toshkent boʻylab ichimlik suvi <accent>yetkazib berish</accent>",
+      "lead": "Ichimlik suvi {volumes} hajmli idishlarda. Mosini tanlab, savatga qoʻshing.",
+      "ctaPrimary": "Suv tanlash",
+      "ctaSecondary": "Qanday buyurtma beriladi",
+      "volumes": "Hajmlar"
+    },
+    "lineup": {
+      "eyebrow": "Assortiment",
+      "title": "Oʻzingizga mos hajmni tanlang",
+      "text": "Hajmlarni birga olish mumkin: masalan, ikkita 20 litrlik va uchta 5 litrlik idish.",
+      "all": "Butun katalog"
+    },
+    "steps": {
+      "eyebrow": "Qanday buyurtma beriladi",
+      "title": "Toʻrt qadamda buyurtma",
+      "s1": {
+        "title": "Hajmni tanlang",
+        "text": "{volumes}. Bir nechta hajmni birga olish ham mumkin."
+      },
+      "s2": {
+        "title": "Sonini belgilang",
+        "text": "Savat dona sonini va umumiy hajmni oʻzi hisoblaydi."
+      },
+      "s3": {
+        "title": "Buyurtma bering",
+        "text": "Faqat ism, telefon va manzil kerak boʻladi."
+      },
+      "s4": {
+        "title": "Suvni oling",
+        "text": "Buyurtmani Toshkentdagi koʻrsatilgan manzilga yetkazib beramiz."
+      }
+    },
+    "delivery": {
+      "eyebrow": "Yetkazib berish",
+      "title": "Toshkent boʻylab suv yetkazib beramiz",
+      "text": "Yetkazib berish muddati, narxi va toʻlov usullari alohida sahifada keltirilgan. U yerda koʻp beriladigan savollarga javoblar ham bor.",
+      "link": "Yetkazib berish shartlari"
+    },
+    "cta": {
+      "title": "Suv tugayaptimi? Onlayn buyurtma bering",
+      "text": "Hajm va sonini tanlang. Buyurtma berish bir necha daqiqa vaqt oladi.",
+      "button": "Katalogga oʻtish",
+      "closedTitle": "Ichimlik suvi {volumes}",
+      "closedText": "Assortimentni katalogda koʻring."
+    }
+  },
+  "catalog": {
+    "title": "Katalog",
+    "lead": "Turli hajmdagi ichimlik suvi. Sonini mahsulot kartochkasida belgilang, turli hajmlarni birga olish mumkin.",
+    "count": "{count, plural, other {# ta mahsulot}}",
+    "compareTitle": "Hajmlarni solishtirish",
+    "compareProduct": "Mahsulot",
+    "compareVolume": "Hajmi",
+    "comparePrice": "Narxi",
+    "comparePerLiter": "Litri",
+    "compareStock": "Mavjudligi"
+  },
+  "calculator": {
+    "eyebrow": "Kalkulyator",
+    "title": "Sizga qancha suv kerak?",
+    "text": "Necha kishi suv ichishini va qancha muddatga zaxira kerakligini koʻrsating. Mos toʻplamni tanlab beramiz.",
+    "people": "Necha kishi",
+    "peopleValue": "{count, plural, other {# kishi}}",
+    "period": "Qancha muddatga",
+    "week": "Bir hafta",
+    "twoWeeks": "2 hafta",
+    "month": "Bir oy",
+    "need": "Taxminan kerak boʻladi",
+    "recommend": "Mos toʻplam",
+    "total": "Toʻplamda jami",
+    "estimate": "Taxminiy narx",
+    "add": "Toʻplamni savatga qoʻshish",
+    "added": "Toʻplam savatga qoʻshildi",
+    "note": "Hisob taxminiy: bir kishiga kuniga {liters} litr atrofida ichimlik suvi.",
+    "decrease": "Kamroq",
+    "increase": "Koʻproq",
+    "unavailable": "Hozir hisoblash uchun mahsulotlar yoʻq."
+  },
+  "delivery": {
+    "title": "Yetkazib berish va toʻlov",
+    "lead": "Ichimlik suvini Toshkent boʻylab yetkazib beramiz. Bu yerda yetkazib berish va toʻlov shartlari, shuningdek koʻp beriladigan savollarga javoblar jamlangan.",
+    "conditions": "Yetkazib berish shartlari",
+    "city": "Yetkazib berish shahri",
+    "time": "Yetkazib berish muddati",
+    "hours": "Yetkazib berish kunlari va soatlari",
+    "cost": "Yetkazib berish narxi",
+    "minOrder": "Minimal buyurtma",
+    "payment": "Toʻlov usullari",
+    "containers": "Idishlar",
+    "noInfo": "Yetkazib berish shartlarini menejerdan aniqlashtirishingiz mumkin.",
+    "faq": "Koʻp beriladigan savollar"
+  },
+  "about": {
+    "title": "Kompaniya haqida",
+    "lead": "Ichimlik suvini Toshkent boʻylab yetkazib beramiz.",
+    "photos": "Suratlar"
+  },
+  "contacts": {
+    "title": "Aloqa",
+    "lead": "Biz bilan qulay usulda bogʻlaning.",
+    "phone": "Telefon",
+    "email": "Elektron pochta",
+    "address": "Manzil",
+    "hours": "Ish vaqti",
+    "messengers": "Messenjerlar",
+    "social": "Ijtimoiy tarmoqlar",
+    "links": "Boshqa platformalarda ham bormiz",
+    "map": "Xaritada",
+    "call": "Qoʻngʻiroq qilish",
+    "empty": "Aloqa maʼlumotlari tez orada qoʻshiladi."
+  },
+  "checkout": {
+    "title": "Buyurtmani rasmiylashtirish",
+    "contactsTitle": "Aloqa maʼlumotlari",
+    "addressTitle": "Yetkazib berish manzili",
+    "commentTitle": "Qoʻshimcha",
+    "name": "Ism",
+    "namePlaceholder": "Sizga qanday murojaat qilaylik",
+    "phone": "Telefon",
+    "phoneHint": "Buyurtma boʻyicha bogʻlanish uchun raqam",
+    "district": "Tuman",
+    "districtPlaceholder": "Tumanni tanlang",
+    "address": "Manzil",
+    "addressPlaceholder": "Koʻcha, uy, xonadon, podyezd, qavat",
+    "landmark": "Moʻljal",
+    "landmarkPlaceholder": "Masalan: maktab roʻparasida, kirish hovli tomondan",
+    "comment": "Buyurtmaga izoh",
+    "commentPlaceholder": "Qulay yetkazib berish vaqti, domofon kodi va boshqa tafsilotlar",
+    "remember": "Keyingi buyurtmalar uchun ism, telefon, tuman, manzil va moʻljalni shu brauzerda eslab qolish",
+    "submit": "Buyurtma berish",
+    "submitting": "Buyurtma yuborilmoqda…",
+    "consent": "«Buyurtma berish» tugmasini bosib, <link>maxfiylik siyosatiga</link> muvofiq shaxsiy maʼlumotlarni qayta ishlashga rozilik bildirasiz.",
+    "summaryToggle": "Buyurtma tarkibi",
+    "editCart": "Oʻzgartirish",
+    "emptyTitle": "Savatda hozircha hech narsa yoʻq",
+    "emptyText": "Savat boʻsh. Katalogdan suv qoʻshing.",
+    "backToForm": "Formaga qaytish",
+    "directOrder": "Toʻgʻridan-toʻgʻri buyurtma berish mumkin:",
+    "unavailable": {
+      "title": "Saytda buyurtma berish vaqtincha ishlamayapti",
+      "text": "Savatingiz saqlandi, unga keyinroq qaytishingiz mumkin."
+    },
+    "errors": {
+      "nameShort": "Ismingizni kiriting (kamida 2 harf)",
+      "phoneInvalid": "Raqamni toʻliq kiriting: +998 dan keyin 9 ta raqam",
+      "addressShort": "Manzilni batafsilroq koʻrsating",
+      "tooLong": "Matn juda uzun"
+    },
+    "sent": {
+      "title": "Buyurtma № {id} yuborildi",
+      "text": "Rahmat! Buyurtmangizni qabul qildik va {phone} raqami orqali siz bilan bogʻlanamiz.",
+      "home": "Bosh sahifaga",
+      "catalog": "Katalogga"
+    },
+    "messenger": {
+      "title": "Bitta qadam qoldi",
+      "text": "Buyurtma bizga yetib borishi uchun uning matnini {channel} orqali yuboring.",
+      "open": "{channel}ni ochish",
+      "hint": "Ilova ochilmasa, matndan nusxa olib, uni qoʻlda yuboring.",
+      "done": "Buyurtma yuborildi, savatni tozalash"
+    },
+    "error": {
+      "title": "Buyurtmani yuborib boʻlmadi",
+      "not_configured": "Saytda buyurtma qabul qilish vaqtincha ishlamayapti.",
+      "delivery_failed": "Buyurtmalarni qabul qilish xizmati hozir javob bermayapti. Bir necha daqiqadan soʻng qayta urinib koʻring.",
+      "network": "Server javob bermadi, shu sababli buyurtma yetib borgan-bormagani nomaʼlum. Savat va shakldagi hech narsani oʻzgartirmay «Qayta urinib koʻrish» tugmasini bosing: buyurtma yangi sifatida emas, xuddi shu raqam bilan qayta yuboriladi.",
+      "validation": "Maydonlar toʻgʻri toʻldirilganini tekshiring.",
+      "unavailable": "Baʼzi mahsulotlar endi sotuvda yoʻq. Buyurtma yuborilmadi, savatni tekshiring.",
+      "empty": "Savat boʻsh.",
+      "server": "Serverda xatolik yuz berdi. Birozdan soʻng qayta urinib koʻring.",
+      "retry": "Qayta urinib koʻrish",
+      "changed": "Narxlar yoki assortiment oʻzgardi, shuning uchun buyurtma yuborilmadi. Sahifani yangilang va savatni tekshiring.",
+      "rate_limited": "Urinishlar juda koʻp. Bir necha daqiqa kutib, qayta urinib koʻring.",
+      "toCart": "Savatni tekshirish"
+    },
+    "rememberSaved": "Maʼlumotlar faqat shu brauzerda saqlangan.",
+    "rememberDelete": "Saqlangan maʼlumotlarni oʻchirish",
+    "rememberDeleted": "Saqlangan maʼlumotlar oʻchirildi"
+  },
+  "privacy": {
+    "title": "Maxfiylik siyosati",
+    "s1Title": "Umumiy qoidalar",
+    "s1Text": "Ushbu siyosat {brand} sayti qanday maʼlumotlarni olishini va ulardan qanday foydalanilishini tavsiflaydi.",
+    "s2Title": "Qanday maʼlumotlarni olamiz",
+    "s2Text": "Buyurtma berishda siz ismingiz, telefon raqamingiz, tuman va yetkazib berish manzili, moʻljal va izohni koʻrsatasiz. Sayt boshqa shaxsiy maʼlumotlarni soʻramaydi.",
+    "s3Title": "Ular nima uchun kerak",
+    "s3Text": "Maʼlumotlar faqat buyurtmangizni qayta ishlash, yetkazib berish va u boʻyicha siz bilan bogʻlanish uchun ishlatiladi.",
+    "s4Title": "Qurilmangizda nima saqlanadi",
+    "s4Text": "Savat tarkibi, shuningdek eslab qolishga ruxsat bergan boʻlsangiz, keyingi buyurtmalar uchun aloqa maʼlumotlaringiz faqat brauzeringizda saqlanadi va buyurtma bermaguningizcha hech qayerga yuborilmaydi. Ularni brauzer sozlamalarida sayt maʼlumotlarini tozalash orqali oʻchirishingiz mumkin.",
+    "s5Title": "Maʼlumotlarni uzatish",
+    "s5Text": "Biz maʼlumotlaringizni sotmaymiz va uchinchi shaxslarga bermaymiz, buyurtmani bajarish uchun zarur boʻlgan yoki Oʻzbekiston Respublikasi qonunchiligida nazarda tutilgan hollar bundan mustasno.",
+    "s6Title": "Sizning huquqlaringiz",
+    "s6Text": "«Aloqa» sahifasidagi istalgan usul orqali biz bilan bogʻlanib, maʼlumotlaringizni aniqlashtirish, oʻzgartirish yoki oʻchirishni soʻrashingiz mumkin.",
+    "updated": "Siyosat saytda eʼlon qilingan paytdan boshlab amal qiladi."
+  },
+  "notFound": {
+    "code": "404-xato",
+    "title": "Bunday sahifa yoʻq",
+    "text": "Havola eskirgan yoki manzilda xato boʻlishi mumkin. Bosh sahifadan boshlang yoki katalogga oʻting.",
+    "home": "Bosh sahifaga",
+    "catalog": "Katalogga"
+  },
+  "footer": {
+    "about": "{volumes} hajmli ichimlik suvini Toshkent boʻylab yetkazib beramiz.",
+    "navigation": "Boʻlimlar",
+    "catalog": "Katalog",
+    "contacts": "Aloqa",
+    "rights": "© {year} {brand}"
+  }
+}
